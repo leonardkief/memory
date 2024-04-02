@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+    min-height: 0;
+}
+
+::selection {
+    background-color: #87cfebaf;
+}
+
+:root {
+    color: #333;
+    background-color: #adefff;
+    font-family: Roboto, sans-serif;
+}
+
+button,
+input {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.btn {
+    transition: all 150ms linear;
+    cursor: pointer;
+    color: #333;
+    background-color: #ffbb00;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.btn:hover {
+    background-color: #e8aa00;
+}
+
+.btn:active {
+    background-color: #d39b00;
+}
+
+.text-input {
+    transition: all 150ms linear;
+    padding: 8px 16px;
+    border: none;
+    border-bottom: 2px solid #aaa;
+}
+
+.text-input:focus {
+    border-color: orangered;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
